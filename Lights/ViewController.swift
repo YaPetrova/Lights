@@ -36,6 +36,8 @@ class ViewController: UIViewController {
     @IBAction func switchLights() {
         startButton.setTitle("NEXT", for: .normal)
         
+// Не поняла, почему при смене текста кнопки на NEXT, меняется и шрифт. Пыталась использовать не ".normal", а что-нибудь другое, но не помогло((
+        
         if redLight.alpha == 1.0 {
             redLight.alpha = 0.3
             yellowLight.alpha = 1.0
